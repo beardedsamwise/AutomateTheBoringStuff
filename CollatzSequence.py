@@ -6,11 +6,15 @@ def collatz(number):
 
 
 print("Enter any number:")
-number = int(input())
+number = input()
 
-while number != 1:
-    number = collatz(number)
-    print(number)
+try:
+    int(number)
+    while number != 1:
+        number = collatz(number)
+        print(number)
+except ValueError: 
+    print("You entered a non-integer!!!")
 
 
 
