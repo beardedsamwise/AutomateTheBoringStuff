@@ -11,7 +11,7 @@ def commaCode(list):
 
     elif listLength == 1:
         string = list[0]
-        print(string)
+        print(string + ".") 
 
     else:
         for i in range(listLength - 1):
