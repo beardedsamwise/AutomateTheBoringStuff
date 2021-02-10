@@ -1,6 +1,7 @@
-# This function that takes a list value as an argument and returns a string with all the items separated by a comma and a space, with and inserted before the last item.
+# This function that takes a list value as an argument and returns a string with all the items separated by a comma and 
+# a space, with and inserted before the last item.
 # For example, passing the previous spam list to the function would return 'apples, bananas, tofu, and cats'. 
-# It will also handle empty lists, and lists with only a single value
+# It will also handle empty lists, and lists with only a single value.
 
 def commaCode(list):
     string = ""
