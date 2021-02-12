@@ -23,7 +23,7 @@ width = (len(grid[0]))
 
 for x in range(width):
         if x > 0:
-                print("\n")
+                print(" ")
         for y in range(height):
             print(grid[y][x], end="")
-print ("\n")
+print (" ")
