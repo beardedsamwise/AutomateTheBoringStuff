@@ -13,6 +13,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
 # Determine the width and height of the nested list
+# We're assuming that the width of each list is the same by only checking the first nested list
 
 height = len(grid)
 width = (len(grid[0]))
