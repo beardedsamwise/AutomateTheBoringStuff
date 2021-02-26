@@ -1,4 +1,6 @@
 def displayInventory(inventory):
+    # This function takes a dictionary as an input and prints an inventory of each item
+    # as well as a total number of items in inventory 
     print("Inventory:")
     item_total = 0
     for k, v in inventory.items():
