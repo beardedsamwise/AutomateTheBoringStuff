@@ -9,10 +9,6 @@ if len(sys.argv) < 2:
 
 keyphrase = sys.argv[1] # first command line arg is the keyphrase
 
-print('argv len is ' + str(len(sys.argv)))
-print(str(sys.argv[0]))
-print(str(sys.argv[1]))
-
 if keyphrase in text:
     pyperclip.copy(text[keyphrase])
     print('Text for ' + keyphrase + ' copied to clipboard.')
