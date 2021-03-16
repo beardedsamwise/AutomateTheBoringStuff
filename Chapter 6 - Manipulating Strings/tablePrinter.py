@@ -16,7 +16,7 @@ def printTable(table):
     # print back data in tabular format using colWidths
     for x in range(height):
         for y in range(width):
-            print(table[y][x].rjust(colWidths[y]), end=" *-* ")
+            print(table[y][x].rjust(colWidths[y]), end="  ")
         print("") # print a new line at the end 
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
