@@ -1,6 +1,6 @@
 def printTable(table):
     # Find the longest string in the inner lists
-    colWidths = [] # create empty array
+    colWidths = [] # create empty list
     for list in table:
         index = (table.index(list)) # get the index of each inner list
         colWidths.append(0) # create a new zero value in list 
