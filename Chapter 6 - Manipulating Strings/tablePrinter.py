@@ -7,8 +7,18 @@ def printTable(table):
         for string in list:
             if len(string) > colWidths[index]: # check if current str is longer than what has been stored
                 colWidths[index] = len(string) 
-    # TODO print back data in tabular format using colWidths
-    
+    # Get column height and width
+    width = len(table)
+    height = 0
+    for list in table:
+        if (len(list) > height):
+            height = len(list)
+    # print back data in tabular format using colWidths
+    for x in range(height):
+        for y in range(width):
+            print(table[y][x].rjust(colWidths[y]), end=" *-* ")
+        print("") # print a new line at the end 
+
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
             ['Alice', 'Bob', 'Carol', 'David'],
             ['dogs', 'cats', 'moose', 'goose']]
