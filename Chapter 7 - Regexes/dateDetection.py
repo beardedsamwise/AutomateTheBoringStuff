@@ -42,10 +42,10 @@ def isValidDate(date):
     
     print(validDate)
 
-isValidDate('22/10/2020') #true
-isValidDate('30/02/2020') #false
-isValidDate('29/02/2020') #true
-isValidDate('29/02/2021') #false
-isValidDate('28/02/2021') #true
+isValidDate('The date is 22/10/2020') #true
+isValidDate('The date is 30/02/2020') #false
+isValidDate('The date is 29/02/2020') #true
+isValidDate('The date is 29/02/2021') #false
+isValidDate('The date is 28/02/2021') #true
 
 
