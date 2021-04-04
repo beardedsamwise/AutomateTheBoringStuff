@@ -1,6 +1,6 @@
 import re
 
-def isValidDate(date):
+def findDate(date):
     # create regex to find dates in dd/mm/yyyy format
     dateRegex = re.compile(r'(\d{2})(/)(\d{2})(/)(\d{4})')
     mo = dateRegex.search(date)
@@ -40,12 +40,15 @@ def isValidDate(date):
         if day > 0 and day < 32:
             validDate = True
     
-    print(validDate)
+    if validDate:
+        print('Found date: ' + mo.group(0))
+    else:
+        print('No valid dates found!')
 
-isValidDate('The date is 22/10/2020') #true
-isValidDate('The date is 30/02/2020') #false
-isValidDate('The date is 29/02/2020') #true
-isValidDate('The date is 29/02/2021') #false
-isValidDate('The date is 28/02/2021') #true
+findDate('The date is 22/10/2020') #true
+findDate('The date is 30/02/2020') #false
+findDate('The date is 29/02/2020') #true
+findDate('The date is 29/02/2021') #false
+findDate('The date is 28/02/2021') #true
 
 
