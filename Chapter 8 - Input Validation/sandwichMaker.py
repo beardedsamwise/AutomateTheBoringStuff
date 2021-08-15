@@ -18,6 +18,6 @@ numSandwhichs = pyip.inputNum(
 bread_cost = {'white': 1, 'wheat': 1, 'sourdough': 2}
 protein_cost = {'chicken': 3, 'tofu': 2, 'ham': 3, 'turkey': 3}
 cheese_cost = 2
-toppings = 1
+toppings_cost = 1
 
 # TO DO calculate sandwhich cost and return to user
