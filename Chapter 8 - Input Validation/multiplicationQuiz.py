@@ -8,7 +8,7 @@ print("This program will ask you 10 multiplication questions.")
 print("You'll have three atetempts at each question and 8 seconds to respond")
 print("Good luck!\n")
 
-for i in range(0, 1):
+for i in range(0, 10):
     x = random.randint(0, 9)
     y = random.randint(0, 9)
     result = x * y
