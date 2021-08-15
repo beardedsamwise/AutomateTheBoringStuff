@@ -14,13 +14,13 @@ toppings = pyip.inputYesNo(
 number_sandwich = pyip.inputNum(
     min=1, prompt="How many sandwiches would you like?\n")
 
-# define prices for sandwich ingredients 
+# define prices for sandwich ingredients
 bread_cost = {'white': 1, 'wheat': 1, 'sourdough': 2}
 protein_cost = {'chicken': 3, 'tofu': 2, 'ham': 3, 'turkey': 3}
 cheese_cost = 2
 toppings_cost = 1
 
-# calculate the cost of the ordered sandwich or sandwiches 
+# calculate the cost of the ordered sandwich or sandwiches
 cost = 0
 cost += (bread_cost.get(bread))
 cost += (protein_cost.get(protein))
@@ -33,4 +33,5 @@ cost = cost * number_sandwich
 if number_sandwich == 1:
     print("Your sandwich comes to a total of $" + str(cost))
 else:
-    print("You ordered " + str(number_sandwich) + " sandwiches with a total cost of $" + str(cost))
+    print("You ordered " + str(number_sandwich) +
+          " sandwiches with a total cost of $" + str(cost))
