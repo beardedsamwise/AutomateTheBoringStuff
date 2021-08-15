@@ -25,9 +25,9 @@ for i in range(0, 10):
             print("That's correct!")
             time.sleep(1)
             break
-        else:
+        elif i < 2:
             print("Try again!")
-        if i == 2:
+        else:
             print("Sorry, you only get three attempts.")
         time.sleep(1)
 
